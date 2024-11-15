@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=link" 
+    />
+    <title>Git & Github</title>
+</head>
+<body>
+    <header>
+        <h1>GIT & GITHUB</h1>
+        <nav>
+            <ul>
+                <li><a href="#git"><span class = "link">link</span>¿Qué es Git?</a></li>
+                <li><a href="#github">¿Qué es Github?</a></li>
+                <li><a href="#github">Comandos básicos de git & github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="#git">
+            <h2>¿Que es Git?</h2>
+            <p>
+                Git es un <strong>sistema de control de versiones distribuido
+                que permite gestionar y rastrear los cambios en el código
+                fuente de un proyecto</strong>. Esto es especialmente útil en
+                desarrollo de software, donde múltiples personas pueden 
+                trabajar en el mismo proyecto y necesitan coordinar 
+                sus contribuciones. Al usar Git, cada desarrollador 
+                puede trabajar en su propia copia del código, realizar 
+                cambios y luego fusionar sus contribuciones en el repositorio 
+                principal. Esto <mark>asegura que el proyecto mantenga un
+                    historial detallado de todas las modificaciones</mark>, facilitando
+                el trabajo colaborativo y la organización de versiones.
+            </p>
+    
+            <p>
+                El funcionamiento de Git se basa en un repositorio, que 
+                es un espacio donde se almacena el código y su historial 
+                de cambios. Este repositorio puede estar en 
+                tu máquina local o en una plataforma de alojamiento en la 
+                nube, como GitHub, GitLab o Bitbucket, que permiten la
+                sincronización entre diferentes desarrolladores. Con Git,
+                puedes crear ramas (branches) para desarrollar nuevas
+                características o solucionar errores sin afectar el código
+                principal (main branch). Una vez finalizados los cambios,
+                puedes combinar tu rama con la rama principal, revisando 
+                y resolviendo conflictos si se producen.
+            </p>
+
+            <p>
+                Cada vez que realizas cambios en el proyecto, puedes <i>"comitear"</i>
+                (commit) esos cambios. Un commit es como una "foto" del proyecto 
+                en un momento específico, con un mensaje descriptivo sobre lo 
+                que cambió. Gracias a estos commits, puedes volver a cualquier 
+                punto en el tiempo para ver cómo estaba el proyecto en esa versión
+                específica. Esto es crucial en caso de errores o para revisar la 
+                evolución del código, y permite a los equipos llevar un seguimiento
+                claro de cada cambio.
+            </p>
+
+            <figure>
+                <img src = "https://git-scm.com/images/logos/1color-darkbg@2x.png" 
+                alt = "Imagen de Git" 
+                tittle = "Imagen de Git"
+                height="200"
+                width="600">
+                <figcaption>Imagen de Git</figcaption>
+
+            </figure>
+        </section>
+    
+        <section id="#github">
+            <h2>¿Que es GitHub?</h2>
+            <p>
+                GitHub es una plataforma de alojamiento de repositorios basada 
+                en Git que permite a los desarrolladores almacenar, gestionar 
+                y colaborar en proyectos de software. Actúa como un "repositorio 
+                en la nube" donde los usuarios pueden subir su código, rastrear 
+                cambios y colaborar con otros programadores. Al estar basada en 
+                Git, GitHub ofrece todas las funcionalidades de control de versiones,
+                permitiendo a los usuarios trabajar en equipo, gestionar cambios 
+                y realizar un seguimiento detallado del desarrollo de un proyecto.
+            </p>
+            <p>
+                Además de las funciones básicas de Git, GitHub ofrece herramientas
+                adicionales que facilitan la colaboración. Los desarrolladores 
+                pueden abrir "issues" para reportar problemas o sugerir nuevas 
+                funcionalidades, y hacer "pull requests" para proponer cambios en 
+                el código, que otros miembros del equipo pueden revisar y aprobar.
+                GitHub también facilita la comunicación entre los colaboradores, 
+                permitiendo que se discutan los cambios directamente en la plataforma 
+                y se hagan revisiones en tiempo real.
+            </p>
+
+            <figure>
+                <img src="https://inlocrobotics.com/wp-content/uploads/2021/06/sistema-de-control-de-versiones-1024x585.jpg"
+                 alt="Control de versiones"
+                  tittle="Control de versiones"
+                  height="400"
+                  width="600">
+                <figcaption>Control de versiones</figcaption>
+            </figure>
+        </section>
+        
+        <section> 
+            <h2>¿Cómo inciar inicializar un repositorio local y subirlo a GitHub?</h2>
+            <ol>
+                <li>Crear un nuevo repositorio en GitHub.</li>
+                <li>Inicializar el repositorio local</li>
+                <li>Agregar y confirmar (commit) archivos en el repositorio local.</li>
+                <li>Conectar el repositorio local con el repositorio remoto en GitHub.</li>
+                <li>Enviar (push) los cambios al repositorio remoto.</li>
+            </ol>
+        </section>
+
+        <section id="#comandos">
+            <h2>Comandos básicos de git & github</h2>
+            <ul>
+                <li>git config --global user.name "Tu Nombre": Configura tu nombre de usuario para todos los repositorios.</li>
+                <li>git config --global user.email "tuemail@example.com": Configura tu correo electrónico para todos los repositorios.</li>
+                <li>git init: Inicializa un nuevo repositorio Git en el directorio actual.</li>
+                <li>git status: Muestra el estado actual del repositorio, indicando archivos modificados, nuevos archivos y archivos en el área de preparación.</li>
+                <li>git add archivo: Agrega un archivo específico al área de preparación (stage).</li>
+                <li>git commit -m "Mensaje del commit": Guarda los cambios en el repositorio con un mensaje descriptivo.</li>
+                <li>git log: Muestra el historial de commits del repositorio.</li>
+                <li>git push: Enviá los cambios al repositorio remoto.</li>
+                <li>git branch: Muestra las ramas actuales en el repositorio.</li>
+                <li>git branch nombre-rama: Crea una nueva rama.</li>
+                <li>git checkout nombre-rama: Cambia a otra rama.</li>
+                <li>git checkout -b nombre-rama: Crea y cambia a una nueva rama.</li>
+                <li>git merge nombre-rama: Fusiona la rama especificada con la rama actual.</li>
+                <li>git remote add origin URL: Conecta el repositorio local con un repositorio remoto.</li>
+                <li>git push -u origin nombre-rama: Sube los cambios a la rama especificada en el repositorio remoto.</li>
+                <li>git pull origin nombre-rama: Trae y combina cambios desde el repositorio remoto a la rama local.</li>
+                <li>git clone URL: Crea una copia local del repositorio remoto.</li>
+                <li><strong>git checkout -- archivo:</strong> Deshace los cambios en un archivo en el directorio de trabajo, restableciéndolo a la última versión confirmada.</li>
+            </ul>
+            
+            <a href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6" target="_blank"><span class="link">Ver</span>Lista completa de comandos de Git</a>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Dudas y comentarios</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre.">
+                
+                <br>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico.">
+                <br>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Escribe tu mensaje."></textarea>
+               
+                <br>
+
+
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                    <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+                    <label><input type="radio" name="sexo" value="otro"> Otro</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Por qué estás aprendiendo Git y GitHub?</legend>
+                    <select name="motivo" id="motivo">
+                        <option>Estoy aprendiendo para mi trabajo</option>
+                        <option>Estoy aprendiendo para mejorar mis habilidades</option>
+                    </select>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        <section>
+    </main>
+
+    <hr>
+
+    <footer>    
+        <p>&copy; 2024 Cardón Carrillo. Todos los derechos reservados.</p>
+</body>
+</html>
